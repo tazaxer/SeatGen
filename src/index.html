@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="renderer.js"></script>
+  </head>
+  
+  <body class="content">
+
+    <script src="functions.js"></script>
+
+    <h1>Seat Generation</h1>
+
+    <form name="main_form" id="student-names">
+      <input id="desks" name="desks" class="input is-primary" type="number" placeholder="Enter the number of available desks!">
+      <input id="students" name="students" class="input is-primary" type="text" placeholder="Enter the names of your students!">
+      
+    </form>
+
+    <p class="new-page"></p>
+     
+    <button id="generate-button" class="button is-primary" onclick="validate()">Generate</button> 
+
+    <p class="new-page"></p>
+    
+    <h1>Generated Layout</h1>
+    <b>Pinaks</b>
+
+    <p class="new-page"></p>
+    
+    <div id="out_desks"></div>
+
+    <script>
+      validate = function() {
+        
+
+        console.clear();
+        let str = document.getElementById("students").value;
+        let kidNames = str.split(', ');
+        let numberOfDesks = document.getElementById("desks").value;
+
+        start(numberOfDesks, kidNames);
+      };
+    </script>
+  </body>
+
+</html>

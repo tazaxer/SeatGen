@@ -1,0 +1,22 @@
+{
+  "name": "SeatGen",
+  "version": "1.0.0",
+  "description": "A simple algorithm for matching seats and desks.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/tazaxer/SeatGen",
+  "keywords": [
+    "seat",
+    "gen"
+  ],
+  "author": "Dennis Gyftakis",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^20.2.0"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
+}
