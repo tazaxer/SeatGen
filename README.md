@@ -1,7 +1,7 @@
 # SeatGen
 Simple JS program made with electron! I'm too lazy to compile it so do it yourself if you wish.
 
-# How to use
+# How To Use
 - Intall [Node.js](https://nodejs.org/)
 
 - Run the following in terminal:
